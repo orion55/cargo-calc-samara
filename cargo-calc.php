@@ -7,8 +7,8 @@
  * @package           Cargo_Calc
  *
  * @wordpress-plugin
- * Plugin Name:       Сargo сalc
- * Plugin URI:        cargo-calc
+ * Plugin Name:       Сargo сalc Samara
+ * Plugin URI:        cargo-calc-samara
  * Description:       Калькулятор по расчету стоимости услуг грузового такси (Самара)
  * Version:           1.1.0
  * Author:            Oleg Grebenev

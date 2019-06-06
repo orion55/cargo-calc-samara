@@ -89,7 +89,7 @@ gulp.task('deploy-ftp', function () {
     log: gutil.log
   })
 
-  const path = '/wp-content/plugins/cargo-calc-samara/'
+  const path = '/wp-content/plugins/cargo-calc-samara/shortcode/assets/'
 
   var globs = [
     '../assets/' + subfolder + '/**'

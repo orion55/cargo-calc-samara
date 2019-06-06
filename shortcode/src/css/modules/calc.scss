@@ -10,18 +10,20 @@
   overflow: hidden;
   background-color: #fff;
   pointer-events: auto;
-  min-height: 470px;
+  min-height: 495px;
   padding: 15px 15px 0;
   display: flex;
   flex-direction: column;
   margin: 0 0 20px 0;
-  max-height: 486px;
+  //max-height: 486px;
+  font-size: 15px;
 }
 
 #calc-shipment {
   .calc__megabox {
     display: flex;
     flex-direction: row;
+    padding-top: 8px;
   }
 
   .calc__one {
@@ -55,6 +57,7 @@
 
   .calc__stage {
     position: relative;
+
     &:after {
       position: absolute;
       content: '';
@@ -114,11 +117,12 @@
       font-size: 12px;
       position: absolute;
       left: 1px;
-      bottom: 0;
+      bottom: -3px;
       border-radius: 30px;
       text-align: center;
       line-height: 30px;
     }
+
     &:after {
       content: '';
       position: absolute;
@@ -170,6 +174,8 @@
     padding: 10px;
     margin-right: 5px;
     margin-bottom: 0;
+    line-height: normal;
+    font: 400 13.3333px Arial;
   }
 
   .calc__input::placeholder {
@@ -344,6 +350,7 @@
   .btn:focus {
     outline: none;
   }
+
   .calc__container {
     display: flex;
     padding-top: 38px;
@@ -368,8 +375,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 25px;
-    height: 31px;
+    /*padding-bottom: 25px;
+    height: 31px;*/
   }
 
   .calc__heading {
@@ -479,6 +486,7 @@
   .calc__input--datepicker {
     padding-left: 10px;
     width: 100%;
+
     .vdatetime-input {
       margin: 0;
       width: 100%;
@@ -487,6 +495,7 @@
       vertical-align: middle;
       font-size: 14px;
     }
+
     .vdatetime-popup__header,
     .vdatetime-calendar__month__day--selected > span > span,
     .vdatetime-calendar__month__day--selected:hover > span > span {
@@ -513,10 +522,12 @@
     font-family: Arial, sans-serif;
     font-weight: 700;
     text-decoration: none;
+
     &:hover {
       .calc__plus {
         color: $color-two;
       }
+
       .calc__desc--plus {
         color: $color-two;
         border-bottom: 1px solid transparent;
@@ -628,9 +639,11 @@
     flex-direction: column;
     height: 100%;
   }
+
   .calc__dropdown {
     width: 100%;
   }
+
   .v-select .dropdown-menu > .highlight > a {
     background: $color-main;
     color: #fff;
@@ -639,64 +652,81 @@
     line-height: 1.42857143;
     margin: 0;
   }
+
   .v-select .dropdown-menu li {
     margin-bottom: 0;
   }
+
   div.calc__dropdown--time {
     width: 70%;
     min-width: 245px;
   }
+
   div.calc__dropdown--durability {
     width: 55%;
   }
+
   .multiselect {
     min-height: 33px;
   }
+
   .multiselect__tags {
     min-height: 33px;
     padding: 3px 33px 0 5px;
     border: 1px solid rgba(60, 60, 60, .26);
   }
+
   .multiselect__select {
     height: 33px;
   }
+
   .multiselect__content-wrapper {
     z-index: 40;
   }
+
   .multiselect__element {
     margin-bottom: 0;
     z-index: 100;
   }
+
   .multiselect__option--selected.multiselect__option--highlight {
     background: $color-two;
   }
+
   .multiselect__content {
     margin: 0;
     list-style: none;
     display: inline-block;
     z-index: 100;
   }
+
   .multiselect__option--highlight {
     background: $color-main;
   }
+
   .multiselect__select {
     top: 2px;
   }
+
   .multiselect__single {
     margin-bottom: 0;
     padding-top: 3px;
   }
+
   .calc__dropdown--from, .calc__dropdown--to {
     width: 85%;
   }
+
   .calc__dropdown--selectbox {
     width: 100%;
   }
+
   .calc__modal-desc {
     padding-bottom: 30px;
     font-size: 17px;
     line-height: 21px;
   }
+
   .calc__modal-charater {
     display: flex;
     flex-direction: row;
@@ -704,26 +734,32 @@
     align-items: center;
     flex-wrap: wrap;
   }
+
   .calc__modal-text {
     padding-bottom: 10px;
   }
+
   .calc__link--personal {
     border-bottom: 1px solid #90b630;
     transition: all .5s ease;
+
     &:hover {
       border-bottom: 1px solid transparent;
       text-decoration: none;
     }
   }
+
   .calc__gear-inner {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 5px;
   }
+
   .calc__gear-label {
     padding-right: 8px;
   }
+
   .calc__intercity {
     padding-top: 8px;
   }
@@ -741,78 +777,99 @@
     .calc__megabox {
       flex-direction: column;
     }
+
     .calc__two {
       width: 100%;
     }
+
     .calc__one {
       max-width: none;
       padding: 15px;
     }
+
     .calc__two {
       max-width: none;
       padding: 15px;
       width: 90%;
     }
+
     .calc__three {
       padding: 15px;
       width: 92%;
     }
+
     .calc__head {
       flex-direction: column-reverse;
       padding-bottom: 10px;
       height: auto;
     }
+
     .calc__container {
       flex-direction: column;
       padding-top: 35px;
     }
+
     .calc__item--five {
       flex-direction: row;
     }
+
     .calc__item--seven {
       flex-direction: row;
     }
+
     .calc__title--links {
       width: 100%;
       padding-right: 20px;
       padding-top: 10px;
     }
+
     .calc__block {
       padding-bottom: 0;
     }
+
     .calc__box--car {
       margin-bottom: 14px;
     }
+
     .calc__wrapper {
       margin: 0 auto;
       padding-bottom: 10px;
     }
+
     .calc__heading {
       text-align: center;
     }
+
     div.calc__desc--cargo {
       margin: 0 auto;
       padding-right: 10px;
       padding-bottom: 0;
     }
+
     div.calc__desc--cargo-time {
       padding-bottom: 0;
     }
+
     .calc__desc--client {
       padding-bottom: 6px;
     }
+
     .calc__desc {
       padding-bottom: 10px;
     }
+
     .calc__item--six {
       padding-bottom: 10px;
     }
+
     .calc__desc--plus {
       padding-bottom: 0;
     }
+
     .calc__item--eight {
       margin: 0 auto;
     }
+
     .calc__item--eleven {
       padding-bottom: 10px;
     }
@@ -820,27 +877,34 @@
     .calc__input--street {
       width: 100%;
     }
+
     .calc__input--name, .calc__input--phone {
       width: 100%;
     }
+
     .calc__desc--time {
       padding-bottom: 0;
     }
+
     .calc__desc--durability {
       padding-bottom: 0;
     }
+
     &.is-collapse {
       & .calc__two, & .calc__three {
         display: none;
       }
     }
+
     .calc__title {
       padding-top: 10px;
       padding-bottom: 10px;
     }
+
     .calc__item--eight {
       margin: 0;
     }
+
     .calc__link--plus {
       justify-content: center;
     }
@@ -858,102 +922,130 @@
     .calc__megabox {
       flex-direction: column;
     }
+
     .calc__two {
       width: 100%;
     }
+
     .calc__one {
       max-width: none;
       padding: 15px;
     }
+
     .calc__two {
       max-width: none;
       padding: 15px;
       width: 90%;
     }
+
     .calc__three {
       padding: 15px;
       width: 92%;
     }
+
     .calc__head {
       flex-direction: column-reverse;
       padding-bottom: 10px;
       height: auto;
     }
+
     .calc__container {
       flex-direction: column;
       padding-top: 35px;
     }
+
     .calc__item--five {
       flex-direction: column;
     }
+
     .calc__item--seven {
       flex-direction: column;
     }
+
     .calc__title {
       padding-top: 10px;
       padding-bottom: 10px;
     }
+
     .calc__title--links {
       width: 100%;
       padding-right: 20px;
       padding-top: 10px;
     }
+
     .calc__block {
       padding-bottom: 0;
     }
+
     .calc__box--car {
       margin-bottom: 14px;
     }
+
     .calc__wrapper {
       margin: 0 auto;
       padding-bottom: 10px;
     }
+
     .calc__heading {
       text-align: center;
     }
+
     div.calc__desc--cargo {
       margin: 0 auto;
       padding-right: 10px;
       padding-bottom: 0;
     }
+
     div.calc__desc--cargo-time {
       padding-bottom: 0;
     }
+
     .calc__desc--client {
       padding-bottom: 6px;
     }
+
     .calc__desc {
       padding-bottom: 10px;
     }
+
     .calc__item--six {
       padding-bottom: 10px;
     }
+
     .calc__desc--plus {
       padding-bottom: 0;
     }
+
     .calc__item--eight {
       margin: 0 auto;
     }
+
     .calc__item--eleven {
       padding-bottom: 10px;
     }
+
     .calc__input--street {
       width: 100%;
     }
+
     .calc__input--name, .calc__input--phone {
       width: 100%;
     }
+
     &.is-collapse {
       & .calc__two, & .calc__three {
         display: none;
       }
     }
+
     .calc__label {
       padding-right: 5px;
     }
+
     .calc__item--eight {
       margin: 0;
     }
+
     .calc__link--plus {
       justify-content: center;
     }
