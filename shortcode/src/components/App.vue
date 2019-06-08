@@ -88,7 +88,7 @@
                                                @focus="onFocus">
                                     </div>
                                 </div>
-                                <div class="calc__intercity">
+                                <div class="calc__intercity calc__hidden">
                                     <label class="control control-checkbox calc__intercity-label">
                                         Междугородние перевозки
                                         <input type="checkbox" v-model="intercityFlag"

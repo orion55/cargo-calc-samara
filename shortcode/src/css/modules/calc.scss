@@ -65,7 +65,7 @@
       width: 100%;
       height: 1px;
       right: 0;
-      top: 5px;
+      top: 8px;
     }
   }
 
@@ -127,7 +127,7 @@
       content: '';
       position: absolute;
       height: 20px;
-      right: -20px;
+      right: -10px;
       top: 0;
       width: 10px;
       background-color: inherit;
@@ -711,6 +711,7 @@
   .multiselect__single {
     margin-bottom: 0;
     padding-top: 3px;
+    font-weight: 500;
   }
 
   .calc__dropdown--from, .calc__dropdown--to {
@@ -742,6 +743,7 @@
   .calc__link--personal {
     border-bottom: 1px solid #90b630;
     transition: all .5s ease;
+    color: #90b630;
 
     &:hover {
       border-bottom: 1px solid transparent;
@@ -762,6 +764,10 @@
 
   .calc__intercity {
     padding-top: 8px;
+  }
+
+  .calc__hidden {
+    display: none;
   }
 }
 
